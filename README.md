@@ -1,5 +1,9 @@
 # GhostPE
 
+Récupérer l'application Ghost : https://pastebin.com/raw/rN7HUwft
+
+
+
 ISO déjà compîlé et avec clavier en Français :
 
 
