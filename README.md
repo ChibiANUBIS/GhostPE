@@ -6,6 +6,8 @@ ADK : http://software-download.microsoft.com/download/pr/19041.1.191206-1406.vb_
 
 Preinstallation Environment : http://software-download.microsoft.com/download/pr/19041.1.191206-1406.vb_release_amd64fre_adkwinpeaddons.iso
 
+========================================================================
+
 Command :
 
 Go to Start>Microsoft Windows ADK and right click Run as administrator the ADK Tools Command Prompt.
@@ -18,7 +20,7 @@ After the scrolling lines stop, type cls and hit enter to clear the screen.
 
 Next, enter the following command: imagex /mountrw C:\GhostPE\winpe.wim 1 C:\GhostPE\mount. This will mount the WIM image so we can edit it.
 
-Navigate in explorer to C:\GhostPE\mount\Windows\ and paste the Ghost32.exe file and/or any other files possible needed for a custom boot disc
+Navigate in explorer to C:\GhostPE\mount\Windows\ and paste the Ghost32.exe file and/or any other files possible needed for a custom boot disc.
 
 Next, the startnet.cmd file must be edited for startup programs to start automatically. In a text editor, open the file C:\GhostPE\mount\Windows\System32\startnet.cmd.
 
@@ -28,7 +30,8 @@ After all changes are complete, go back to the command prompt and enter the comm
 
 Finally, to create a bootable ISO, enter the command: oscdimg –n –bC:\GhostPE\etfsboot.com C:\GhostPE\ISO “%UserProfile%\Desktop\GhostBootDisc.iso”. This may take a few minutes.
 
+========================================================================
 
 About the script :
 
-This script can be use only for create a WinPE French interface and keyboard.
+This script can be use only for create a WinPE French interface and keyboard with EFI/MBR x86/x64.
